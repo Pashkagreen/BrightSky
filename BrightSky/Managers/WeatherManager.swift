@@ -11,7 +11,15 @@ import Foundation
 final class WeatherManager {
     static let shared = WeatherManager()
     
+    public var weatherFetched = {
+        
+    }
+    
     let service = WeatherService.shared
+    
+    public private(set) var currentWeather: CurrentWeather?
+    public private(set) var hourlyWeather: [HourWeather] = []
+    public private(set) var dailyWeather: [DayWeather] = []
     
     private init() {}
     
@@ -23,6 +31,10 @@ final class WeatherManager {
                 print("Current: \(result.currentWeather)")
                 print("Houtly: \(result.hourlyForecast)")
                 print("Daily: \(result.dailyForecast)")
+                
+                self.currentWeather = result.currentWeather
+                self.hourlyWeather = result.hourlyForecast.forecast
+                self.dailyWeather = result.dailyForecast.forecast
                 
                 completion()
             } catch {

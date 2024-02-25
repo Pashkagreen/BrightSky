@@ -7,8 +7,8 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
-    
+class SettingsViewController: UIViewController, SettingsViewDelegate {
+
     private let primaryView: SettingsView = {
         let view = SettingsView()
         let viewModel = SettingsViewViewModel(options: SettingsOption.allCases)
@@ -19,6 +19,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        primaryView.delegate = self
         setUpView()
     }
     
@@ -33,4 +34,21 @@ class SettingsViewController: UIViewController {
         ])
     }
 
+}
+
+extension SettingsViewController {
+    func settingsView(_ settingsView: SettingsView, didTap option: SettingsOption) {        
+        switch option {
+        case .upgrade:
+            break
+        case .privacyPolicy:
+            break
+        case .terms:
+            break
+        case .contact:
+            break
+        case .getHelp:
+            break
+        }
+    }
 }

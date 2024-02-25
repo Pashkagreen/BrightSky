@@ -22,8 +22,8 @@ class WeatherViewController: UIViewController {
         LocationManager.shared.getCurrentLocation{ location in
             print(String(describing: location))
             
-            WeatherManager.shared.getWeather(for: location) {
-                print("OK")
+            WeatherManager.shared.getWeather(for: location) { [weak self] in
+                self?.primaryView.reload()
             }
         }
     }
