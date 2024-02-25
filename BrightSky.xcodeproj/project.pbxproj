@@ -19,6 +19,7 @@
 		8208E9EC2B8A9F200009DD3A /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8208E9EB2B8A9F200009DD3A /* TabViewController.swift */; };
 		8208E9EE2B8AA3D80009DD3A /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8208E9ED2B8AA3D80009DD3A /* CurrentWeatherView.swift */; };
 		8208E9F02B8AA7900009DD3A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8208E9EF2B8AA7900009DD3A /* SettingsView.swift */; };
+		8208E9F22B8B5B960009DD3A /* SettingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8208E9F12B8B5B960009DD3A /* SettingsViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		8208E9EB2B8A9F200009DD3A /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		8208E9ED2B8AA3D80009DD3A /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
 		8208E9EF2B8AA7900009DD3A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8208E9F12B8B5B960009DD3A /* SettingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		8208E9D02B8A9A580009DD3A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8208E9F12B8B5B960009DD3A /* SettingsViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				8208E9EA2B8A9EB80009DD3A /* SettingsViewController.swift in Sources */,
 				8208E9F02B8AA7900009DD3A /* SettingsView.swift in Sources */,
 				8208E9E52B8A9C4C0009DD3A /* IAPManager.swift in Sources */,
+				8208E9F22B8B5B960009DD3A /* SettingsViewViewModel.swift in Sources */,
 				8208E9E12B8A9BAF0009DD3A /* AppDelegate.swift in Sources */,
 				8208E9BF2B8A94480009DD3A /* WeatherViewController.swift in Sources */,
 				8208E9BD2B8A94480009DD3A /* SceneDelegate.swift in Sources */,

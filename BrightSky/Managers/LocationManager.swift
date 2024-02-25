@@ -46,6 +46,6 @@ final class LocationManager: NSObject, CLLocationManagerDelegate {
         self.location = location
         
         // Observe location updates
-        manager.startUpdatingLocation()
+        manager.stopUpdatingLocation()
     }
 }

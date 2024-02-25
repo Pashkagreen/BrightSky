@@ -14,6 +14,21 @@ class WeatherViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUpView()
+        getLocation()
+    }
+    
+    private func getLocation() {
+        LocationManager.shared.getCurrentLocation{ location in
+            print(String(describing: location))
+            
+            WeatherManager.shared.getWeather(for: location) {
+                print("OK")
+            }
+        }
+    }
+
+    private func setUpView() {
         view.backgroundColor = .systemBackground
         view.addSubview(primaryView)
         NSLayoutConstraint.activate([
@@ -23,7 +38,5 @@ class WeatherViewController: UIViewController {
             primaryView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
         ])
     }
-
-
 }
 
