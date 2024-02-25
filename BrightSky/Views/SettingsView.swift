@@ -1,5 +1,5 @@
 //
-//  CurrentWeatherView.swift
+//  SettingsView.swift
 //  BrightSky
 //
 //  Created by Paul Grin on 24/02/2024.
@@ -7,12 +7,11 @@
 
 import UIKit
 
-final class CurrentWeatherView: UIView {
-
+class SettingsView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = .cyan
+        backgroundColor = .red
         translatesAutoresizingMaskIntoConstraints = false
     }
     
