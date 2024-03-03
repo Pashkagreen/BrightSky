@@ -18,4 +18,8 @@ class DailyWeatherCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError()
     }
+    
+    public func configure(with: DailyWeatherCollectionViewCellViewModel) {
+        
+    }
 }

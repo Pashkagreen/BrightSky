@@ -24,6 +24,10 @@
 		8208E9F72B8B8B560009DD3A /* CurrentWeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8208E9F62B8B8B560009DD3A /* CurrentWeatherCollectionViewCell.swift */; };
 		8208E9F92B8B8BD60009DD3A /* HourlyWeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8208E9F82B8B8BD60009DD3A /* HourlyWeatherCollectionViewCell.swift */; };
 		8208E9FD2B8B8C1E0009DD3A /* DailyWeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8208E9FC2B8B8C1E0009DD3A /* DailyWeatherCollectionViewCell.swift */; };
+		82FDDDC22B951BBB00BB8F85 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FDDDC12B951BBB00BB8F85 /* WeatherViewModel.swift */; };
+		82FDDDC42B951C4B00BB8F85 /* CurrentWeatherCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FDDDC32B951C4B00BB8F85 /* CurrentWeatherCollectionViewCellViewModel.swift */; };
+		82FDDDC62B951C9300BB8F85 /* HourlyWeatherCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FDDDC52B951C9300BB8F85 /* HourlyWeatherCollectionViewCellViewModel.swift */; };
+		82FDDDC82B951CA900BB8F85 /* DailyWeatherCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FDDDC72B951CA900BB8F85 /* DailyWeatherCollectionViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,10 @@
 		8208E9F62B8B8B560009DD3A /* CurrentWeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		8208E9F82B8B8BD60009DD3A /* HourlyWeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		8208E9FC2B8B8C1E0009DD3A /* DailyWeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		82FDDDC12B951BBB00BB8F85 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		82FDDDC32B951C4B00BB8F85 /* CurrentWeatherCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		82FDDDC52B951C9300BB8F85 /* HourlyWeatherCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		82FDDDC72B951CA900BB8F85 /* DailyWeatherCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 			children = (
 				8208E9F12B8B5B960009DD3A /* SettingsViewViewModel.swift */,
 				8208E9F32B8B88E40009DD3A /* CurrentWeatherSection.swift */,
+				82FDDDC12B951BBB00BB8F85 /* WeatherViewModel.swift */,
+				82FDDDC32B951C4B00BB8F85 /* CurrentWeatherCollectionViewCellViewModel.swift */,
+				82FDDDC52B951C9300BB8F85 /* HourlyWeatherCollectionViewCellViewModel.swift */,
+				82FDDDC72B951CA900BB8F85 /* DailyWeatherCollectionViewCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -231,10 +243,14 @@
 				8208E9EC2B8A9F200009DD3A /* TabViewController.swift in Sources */,
 				8208E9E82B8A9C8D0009DD3A /* WeatherManager.swift in Sources */,
 				8208E9F92B8B8BD60009DD3A /* HourlyWeatherCollectionViewCell.swift in Sources */,
+				82FDDDC42B951C4B00BB8F85 /* CurrentWeatherCollectionViewCellViewModel.swift in Sources */,
 				8208E9E32B8A9C3D0009DD3A /* LocationManager.swift in Sources */,
 				8208E9EE2B8AA3D80009DD3A /* CurrentWeatherView.swift in Sources */,
 				8208E9EA2B8A9EB80009DD3A /* SettingsViewController.swift in Sources */,
+				82FDDDC82B951CA900BB8F85 /* DailyWeatherCollectionViewCellViewModel.swift in Sources */,
 				8208E9F02B8AA7900009DD3A /* SettingsView.swift in Sources */,
+				82FDDDC22B951BBB00BB8F85 /* WeatherViewModel.swift in Sources */,
+				82FDDDC62B951C9300BB8F85 /* HourlyWeatherCollectionViewCellViewModel.swift in Sources */,
 				8208E9E52B8A9C4C0009DD3A /* IAPManager.swift in Sources */,
 				8208E9F22B8B5B960009DD3A /* SettingsViewViewModel.swift in Sources */,
 				8208E9E12B8A9BAF0009DD3A /* AppDelegate.swift in Sources */,
