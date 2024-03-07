@@ -16,9 +16,9 @@ platform :ios do
   desc "Authenticate in AppStore Connect"
   lane :authenticate do
       app_store_connect_api_key(
-       key_id: "M2X67V4LLP",
-       issuer_id: "6a2d45ac-d326-4473-bbd8-39ebb7abb8ad",
-       key_content: "LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JR1RBZ0VBTUJNR0J5cUdTTTQ5QWdFR0NDcUdTTTQ5QXdFSEJIa3dkd0lCQVFRZ1YybkRJdE9GMGVXRytZZDkKYUszYXBQK2lRV3JyMkloOXVBeWF6Q1Vlck5pZ0NnWUlLb1pJemowREFRZWhSQU5DQUFSZDVxcVB5bEluQkpodgp3OWFkVWlzTGVSOGJrV2FtSEUvRm1QY0RIV2xWMnd0TU04ek9oRFowZFFBNWdBbXVZOTVmam9ad2ZwenUrcWNxCjdVOU5qQnFsCi0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0=",
+       key_id: ENV["KEY_ID"],
+       issuer_id: ENV["ISSUER_ID"],
+       key_content: ENV["KEY_CONTENT"],
        is_key_content_base64: true
   )
   end
