@@ -1,0 +1,53 @@
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+
+platform :ios do
+
+  desc "Get application bundle id"
+  lane :my_app_identifier do
+      app_identifier =
+	CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
+      puts app_identifier
+  end
+
+  desc "Authenticate in AppStore Connect"
+  lane :authenticate do
+      app_store_connect_api_key(
+       key_id: "M2X67V4LLP",
+       issuer_id: "6a2d45ac-d326-4473-bbd8-39ebb7abb8ad",
+       key_content: "LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JR1RBZ0VBTUJNR0J5cUdTTTQ5QWdFR0NDcUdTTTQ5QXdFSEJIa3dkd0lCQVFRZ1YybkRJdE9GMGVXRytZZDkKYUszYXBQK2lRV3JyMkloOXVBeWF6Q1Vlck5pZ0NnWUlLb1pJemowREFRZWhSQU5DQUFSZDVxcVB5bEluQkpodgp3OWFkVWlzTGVSOGJrV2FtSEUvRm1QY0RIV2xWMnd0TU04ek9oRFowZFFBNWdBbXVZOTVmam9ad2ZwenUrcWNxCjdVOU5qQnFsCi0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0=",
+       is_key_content_base64: true
+  )
+  end
+
+  desc "Sync certificates"
+  lane :sync_certificates do
+     #read-only disables match from overriding the existing certificates.
+     match({readonly: true, type: "appstore"})
+  end
+
+  desc "Create ipa"
+  lane :build do
+     #update profiles
+     sync_certificates
+     # Increases the build number by 1
+     increment_build_number
+     # Creates a signed file
+     gym
+  end
+
+  desc "Upload to TestFlight"
+   lane :beta do
+        authenticate()
+
+        build()
+        pilot(
+            notify_external_testers: false,
+            changelog: "This is my changelog of things that have changed in a log",
+            ipa: "./fastlane/builds/BrightSky.ipa"
+        )
+   end
+end
