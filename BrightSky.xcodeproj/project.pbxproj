@@ -56,6 +56,7 @@
 		8208E9FC2B8B8C1E0009DD3A /* DailyWeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		8231E4492B9DF737002FDF48 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		8231E44B2B9DF919002FDF48 /* BrightSky - Weather app.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "BrightSky - Weather app.storekit"; sourceTree = "<group>"; };
+		8231E44C2B9DFDD5002FDF48 /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = "<group>"; };
 		82FDDDC12B951BBB00BB8F85 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		82FDDDC32B951C4B00BB8F85 /* CurrentWeatherCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		82FDDDC52B951C9300BB8F85 /* HourlyWeatherCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
@@ -80,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				8231E44B2B9DF919002FDF48 /* BrightSky - Weather app.storekit */,
+				8231E44C2B9DFDD5002FDF48 /* StoreKitTestCertificate.cer */,
 				8208E9B92B8A94480009DD3A /* BrightSky */,
 				8208E9B82B8A94480009DD3A /* Products */,
 				8231E4482B9DF737002FDF48 /* Frameworks */,
