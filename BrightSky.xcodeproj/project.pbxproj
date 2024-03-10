@@ -24,6 +24,9 @@
 		8208E9F72B8B8B560009DD3A /* CurrentWeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8208E9F62B8B8B560009DD3A /* CurrentWeatherCollectionViewCell.swift */; };
 		8208E9F92B8B8BD60009DD3A /* HourlyWeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8208E9F82B8B8BD60009DD3A /* HourlyWeatherCollectionViewCell.swift */; };
 		8208E9FD2B8B8C1E0009DD3A /* DailyWeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8208E9FC2B8B8C1E0009DD3A /* DailyWeatherCollectionViewCell.swift */; };
+		8231E4432B9DEF4B002FDF48 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 8231E4422B9DEF4B002FDF48 /* RevenueCat */; };
+		8231E4452B9DEF4B002FDF48 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8231E4442B9DEF4B002FDF48 /* RevenueCatUI */; };
+		8231E44A2B9DF737002FDF48 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8231E4492B9DF737002FDF48 /* StoreKit.framework */; };
 		82FDDDC22B951BBB00BB8F85 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FDDDC12B951BBB00BB8F85 /* WeatherViewModel.swift */; };
 		82FDDDC42B951C4B00BB8F85 /* CurrentWeatherCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FDDDC32B951C4B00BB8F85 /* CurrentWeatherCollectionViewCellViewModel.swift */; };
 		82FDDDC62B951C9300BB8F85 /* HourlyWeatherCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FDDDC52B951C9300BB8F85 /* HourlyWeatherCollectionViewCellViewModel.swift */; };
@@ -51,6 +54,8 @@
 		8208E9F62B8B8B560009DD3A /* CurrentWeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		8208E9F82B8B8BD60009DD3A /* HourlyWeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		8208E9FC2B8B8C1E0009DD3A /* DailyWeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		8231E4492B9DF737002FDF48 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8231E44B2B9DF919002FDF48 /* BrightSky - Weather app.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "BrightSky - Weather app.storekit"; sourceTree = "<group>"; };
 		82FDDDC12B951BBB00BB8F85 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		82FDDDC32B951C4B00BB8F85 /* CurrentWeatherCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		82FDDDC52B951C9300BB8F85 /* HourlyWeatherCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
@@ -62,6 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8231E44A2B9DF737002FDF48 /* StoreKit.framework in Frameworks */,
+				8231E4432B9DEF4B002FDF48 /* RevenueCat in Frameworks */,
+				8231E4452B9DEF4B002FDF48 /* RevenueCatUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +79,10 @@
 		8208E9AE2B8A94480009DD3A = {
 			isa = PBXGroup;
 			children = (
+				8231E44B2B9DF919002FDF48 /* BrightSky - Weather app.storekit */,
 				8208E9B92B8A94480009DD3A /* BrightSky */,
 				8208E9B82B8A94480009DD3A /* Products */,
+				8231E4482B9DF737002FDF48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +180,14 @@
 			path = WeatherCells;
 			sourceTree = "<group>";
 		};
+		8231E4482B9DF737002FDF48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8231E4492B9DF737002FDF48 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,6 +204,10 @@
 			dependencies = (
 			);
 			name = BrightSky;
+			packageProductDependencies = (
+				8231E4422B9DEF4B002FDF48 /* RevenueCat */,
+				8231E4442B9DEF4B002FDF48 /* RevenueCatUI */,
+			);
 			productName = BrightSky;
 			productReference = 8208E9B72B8A94480009DD3A /* BrightSky.app */;
 			productType = "com.apple.product-type.application";
@@ -214,6 +236,9 @@
 				Base,
 			);
 			mainGroup = 8208E9AE2B8A94480009DD3A;
+			packageReferences = (
+				8231E43F2B9DEF4B002FDF48 /* XCRemoteSwiftPackageReference "purchases-ios" */,
+			);
 			productRefGroup = 8208E9B82B8A94480009DD3A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -489,6 +514,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8231E43F2B9DEF4B002FDF48 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.38.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8231E4422B9DEF4B002FDF48 /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8231E43F2B9DEF4B002FDF48 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
+		8231E4442B9DEF4B002FDF48 /* RevenueCatUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8231E43F2B9DEF4B002FDF48 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCatUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8208E9AF2B8A94480009DD3A /* Project object */;
 }

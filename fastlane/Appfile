@@ -3,4 +3,4 @@ Dotenv.load('./env')
 
 app_identifier("com.pashkagreen.brightsky") # The bundle identifier of your app
 apple_id(ENV["APPLE_ID"])
-team_id(ENV["APPLE_TEAM_ID"]) # Developer Portal Team ID
+# team_id(ENV["APPLE_TEAM_ID"]) # Developer Portal Team ID

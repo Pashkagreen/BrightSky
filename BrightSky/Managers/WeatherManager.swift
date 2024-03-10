@@ -28,10 +28,6 @@ final class WeatherManager {
             do {
                 let result = try await service.weather(for: location)
                 
-                print("Current: \(result.currentWeather)")
-                print("Houtly: \(result.hourlyForecast)")
-                print("Daily: \(result.dailyForecast)")
-                
                 self.currentWeather = result.currentWeather
                 self.hourlyWeather = result.hourlyForecast.forecast
                 self.dailyWeather = result.dailyForecast.forecast

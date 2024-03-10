@@ -4,16 +4,18 @@
 //
 //  Created by Paul Grin on 24/02/2024.
 //
-
+import RevenueCat
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        Purchases.logLevel = .debug
+        Purchases.configure(withAPIKey: "appl_cfiPEmyyDbCeQUatRNumqDyjsTe")
+        
         return true
     }
 

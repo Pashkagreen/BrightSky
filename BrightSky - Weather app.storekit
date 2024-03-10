@@ -1,0 +1,129 @@
+{
+  "identifier" : "23C72DEA",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6478994225",
+    "_developerTeamID" : "2VR5JM9P46",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 731773213.16880095,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21462662",
+      "localizations" : [
+
+      ],
+      "name" : "Premium",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "6479215811",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Monthly access to daily weather forecast",
+              "displayName" : "Pro - Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.pashkagreen.brightsky.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Pro - Monthly",
+          "subscriptionGroupID" : "21462662",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "1.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6479215794",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Annual access to a daily weather forecast",
+              "displayName" : "Pro - Year",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.pashkagreen.brightsky.year",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Pro - Year",
+          "subscriptionGroupID" : "21462662",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}
