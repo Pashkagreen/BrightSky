@@ -5,47 +5,47 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000508">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000376">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: Switch to ios authenticate lane" time="0.000204">
+      <testcase classname="fastlane.lanes" name="1: Switch to ios authenticate lane" time="0.000113">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: app_store_connect_api_key" time="0.003347">
+      <testcase classname="fastlane.lanes" name="2: app_store_connect_api_key" time="0.002903">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: Switch to ios build lane" time="0.000236">
+      <testcase classname="fastlane.lanes" name="3: Switch to ios build lane" time="0.000102">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: Switch to ios sync_certificates lane" time="0.000216">
+      <testcase classname="fastlane.lanes" name="4: Switch to ios sync_certificates lane" time="7.3e-05">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: match" time="2.890014">
+      <testcase classname="fastlane.lanes" name="5: match" time="2.346376">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: increment_build_number" time="5.294042">
+      <testcase classname="fastlane.lanes" name="6: increment_build_number" time="14.783808">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="7: gym" time="61.499507">
+      <testcase classname="fastlane.lanes" name="7: gym" time="98.250958">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="8: pilot" time="163.456808">
+      <testcase classname="fastlane.lanes" name="8: pilot" time="172.400343">
         
       </testcase>
     
